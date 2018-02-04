@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Groovy Little Movers</title>
+	
+	<script src="//code.angularjs.org/1.6.8/angular.min.js"></script>
+	<script src="//code.angularjs.org/1.6.8/angular-route.min.js"></script>
+	<script src="//code.angularjs.org/1.6.8/angular-animate.js"></script>
+	<script src="app.js"></script>
+	<script src="menu.js"></script>
+	
+	 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="author" content="Katy Luong">
+   <meta name="description" content="Groovy Little Movers">
+   <meta name="keywords" content="groovy little movers, solihull, kids, dance class"><title>Groovy Little Movers</title>
+   <link rel="stylesheet" type="text/css" media="all" href="style.css">
+   <link rel="stylesheet" href="plugins/colorbox-master/example1/colorbox.css" />
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="plugins/colorbox-master/jquery.colorbox.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+   <script language="Javascript">
+  
+	  <!--Begin
+	  var user;
+	  var domain;
+	  var suffix;
+	  
+	  function Myemail(user, domain, suffix){
+	  document.write('<a href="' + 'mailto:' + user + '@' + domain + '.'+ suffix + '">'
+	  + user +'@' + domain +'.' + suffix +'</a>');
+	  }
+	  
+	  // End -->
+  </script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-42150239-1', 'arvixe.com');
+	  ga('send', 'pageview');
+
+	</script>
+	
+</head>
+<body id="main_body">
+	 
+	<div id="headerDiv">
+		<tr>
+			<td>				
+				<table cellpadding="0" cellspacing="0" id="tblHeader" >
+					<tbody>
+					
+						 <tr>	 
+							<td align="left"  style="line-height: 0;width:300px; ">
+								<img id="imgLogo" src="resources/logo.png" style="height:153px;" onclick="myJS.showPageDiv('Home');" alt="Header image" border="0">
+							</td>
+							<td style="vertical-align:bottom;width:auto;">
+								<p class="TopMenu" align="right">			
+									<a href="https://www.facebook.com/GroovyLittleMovers" onmouseover="$('#fbLink').css('text-decoration','underline');" onmouseout="$('#fbLink').css('text-decoration','none');" target="_blank">
+										<span id="fbLink" style="float:left;line-height:25px;color:white;" >Keep updated:</span>
+										<img src="Resources/Facebook.png" alt="Header image" style="float:right;margin-right:20px;" border="0" height="25" width="25" >
+									</a>
+								</p>
+								<p align="center" style="clear:both;margin-bottom:5px;">
+									<label style="font-family:Trebuchet MS;color:white;font-size:16pt;"><i> SING, DANCE AND PLAY &#8209; THE GROOVY WAY!</i></label>
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</div>
+	<div id="divMain">
+		<table id="tblMain" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td>
+						<table cellpadding="0" cellspacing="0" style="width:100%;" class="NavigationBar" >
+							<tbody>
+								 <tr data-active-menu="selected" >	 
+									<td class="NavigationMenuItem " menuName="Home"><a is-active-nav href="#/">Home</a></td>
+									<td class="NavigationMenuItem" menuName="Classes" ><a is-active-nav href="#/classes">Classes</td>
+									<td class="NavigationMenuItem" menuName="WhenWhere"><a is-active-nav href="#/whenwhere">When &amp; Where</td>
+									<td class="NavigationMenuItem" menuName="Parties"><a is-active-nav href="#/parties">Parties</td>
+									<td class="NavigationMenuItem" menuName="AboutUs"><a is-active-nav href="#/aboutus">About Us</td>
+									<td class="NavigationMenuItem LastMenuItem" menuName="ContactUs" ><a is-active-nav href="#/contactus">Contact Us</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="divMainContent" ng-view>
+													
+						</div>   
+					</td>
+				</tr>
+				<tr style="height:20px;background-color:#66217F;">
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+</body>
+</html>

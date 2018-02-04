@@ -1,0 +1,36 @@
+﻿<table style="border-spacing:0px;margin-left:50px;">
+	<tr>
+		<td style="vertical-align:top;">
+			<h2> 
+				Welcome to the Groovy Little Movers website
+			</h2>
+			<p>
+				Groovy Little Movers is a unique and independent small business based in and around Solihull. 
+				We offer engaging and educational dance and music classes for little ones from 6 months - 6 years old. 
+				Classes are fast paced and fun and use a variety of props and instruments. Classes, which are 
+				taught in different age groups, are designed to develop children's co-ordination and improve posture, 
+				balance and rhythm. Our structured classes develop confidence and creativity, alongside listening, 
+				language and social skills. Our original music creates a unique groove to our classes which are 
+				packed with learning but packaged in fun!
+			</p>
+			<p>
+				Come and join us and find out why being a Groovy Little Mover is so much fun!
+			</p>
+			<!--<img src="http://placehold.it/350x180&text=No Pic" >-->
+			<div style="text-align:center;">
+				<img src="resources/Parachute1.jpg" class="pic" >
+			</div>
+		</td>
+		<td rowspan="2" style="width:300px;padding:0px;vertical-align:top;height:400px;">
+			<div style="margin-left:10px;margin-top:5px;">
+				<img src="resources/GeorgeCartoon.jpg" title="Get into the groove with George the giraffe!">
+			</div>
+			<div class="divTestimonial" ng-controller="testimonialController">
+				<div ng-show="animate" class="divTestimonialStatement" ng-bind="statement"></div>
+				<div ng-show="animate" class="divTestimonialAuthor" ng-bind="author"></div>
+				<div class="divTestimonialNext"><a class="lnkTestimonialNext" ng-click="nextTestimonial()">Next &#10137;</a></div>
+			</div>
+		</td>
+	</tr>
+</table>
+
